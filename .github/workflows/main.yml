@@ -28,9 +28,13 @@ jobs:
       - name: Reports Generate
         if: ${{ failure() || success() }}
         run: npx allure generate allure-results --clean -o allure-report
-      - name: Deploy Report
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Report
+        uses: actions/upload-pages-artifact@v1
         if: ${{ failure() || success() }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
+          destination_repo: 'AvatarasS/telnyxCypressCucumber'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
