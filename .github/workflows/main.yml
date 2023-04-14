@@ -33,6 +33,4 @@ jobs:
         if: ${{ failure() || success() }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
           publish_dir: ./allure-report
-          target-folder: ./docs
