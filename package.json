@@ -7,12 +7,16 @@
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@shelex/cypress-allure-plugin": "^2.38.3",
+    "allure-commandline": "^2.18.1",
     "cypress": "^12.9.0",
     "cypress-xpath": "^2.0.1"
   },
