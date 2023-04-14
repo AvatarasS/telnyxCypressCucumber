@@ -10,12 +10,14 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: npm i
+        run: |
+          npm install
+          npm ci
       - name: Install Cypress
         run: npm install cypress --save-dev
       - name: Install cucumber
@@ -26,7 +28,7 @@ jobs:
         if: ${{ failure() || success() }}
         run: npx allure generate allure-results --clean -o allure-report
       - name: Deploy Report
-        uses: JamesIves/github-pages-deploy-action@v4.4.0 # GH Action
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         if: ${{ failure() || success() }}
         with:
           branch: main
