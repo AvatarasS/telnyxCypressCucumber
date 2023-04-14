@@ -1,24 +1,32 @@
 {
-    "name": "cypress-cucumber-bahmutov",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "cy:open": "npx cypress open",
-        "cy:run": "npx cypress run",
-        "report:merge": "mochawesome-merge > index.json",
-        "report:mocha": "marge index.json",
-        "report:clean": "rimraf mochawesome-report index.js"
-      },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
-        "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-        "cypress": "^12.9.0",
-        "cypress-xpath": "^2.0.1"
-    },
-    "dependencies": {
-        "cosmiconfig": "^8.1.0"
-    }
+  "name": "cypress-cucumber-bahmutov",
+  "version": "1.0.0",
+  "description": "This project is an automated testing suite for the website [Telnyx](https://telnyx.com/), written in Cypress and Cucumber using JavaScript. These tests cover various features of the Telnyx website, including video playback, logo display, button functionality and href attributes, form validation, title naming, search functionality, and checkbox filtering in different sections of the website.",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@shelex/cypress-allure-plugin": "^2.38.3",
+    "cypress": "^12.9.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "allure": "^0.0.0",
+    "cosmiconfig": "^8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvatarasS/telnyxCypressCucumber.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AvatarasS/telnyxCypressCucumber/issues"
+  },
+  "homepage": "https://github.com/AvatarasS/telnyxCypressCucumber#readme"
 }

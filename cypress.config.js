@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
@@ -14,13 +14,14 @@ module.exports = defineConfig({
     
     on("file:preprocessor", bundler);
     await addCucumberPreprocessorPlugin(on, config);
-    
+    allureWriter(on, config);
     return config;
 
     },
     specPattern: "cypress/e2e/*.feature",
     viewportWidth: 1920,
-    viewportHeight: 1080    
+    viewportHeight: 1080,
+    chromeWebSecurity: false
 
     }
 })

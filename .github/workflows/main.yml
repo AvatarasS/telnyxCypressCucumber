@@ -1,12 +1,34 @@
-name: E2E on Chrome
-on: [push]
+name: Cypress Tests
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
-    # let's make sure our tests pass on Chrome browser
-    name: E2E on Chrome
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: cypress-io/github-action@v5
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          browser: chrome
+          node-version: '14.x'
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Cypress
+        run: npm install cypress --save-dev
+      - name: Install cucumber
+        run: npm install --save-dev @cucumber/cucumber
+      - name: Run Cypress test
+        run: npx cypress run --env allure=true,allureReuseAfterSpec=true
+      - name: Reports Generate
+        if: ${{ failure() || success() }}
+        run: npx allure generate allure-results --clean -o allure-report
+      - name: Deploy Report
+        uses: JamesIves/github-pages-deploy-action@v4.4.0 # GH Action
+        if: ${{ failure() || success() }}
+        with:
+          branch: main
+          folder: ./allure-report
+          target-folder: ./docs
