@@ -1,0 +1,64 @@
+{
+    "telnyxUrl": "https://telnyx.com/",
+
+    "pageUrl": {
+      "dataPrivacy": "https://telnyx.com/company/data-privacy",
+      "reportAbuse": "https://telnyx.com/report-abuse",
+      "websiteTerms": "https://telnyx.com/terms-and-conditions",
+      "releaseNotes": "https://telnyx.com/release-notes"
+    },
+
+    "errorMessage":{
+      "reportAbuseRequiredField": "This field is required."
+    },
+
+    "subjectFieldNumber": 0,
+    "abusiveFieldNumber": 1,
+    "abusedFieldNumber": 2,
+
+    "checkboxes": {
+      "voice": 0,
+      "sms": 1
+    },
+
+    "checkboxesSelect": {
+      "Storage": 1,
+      "VoiceAPI": 2,
+      "WhatsApp": 3,
+      "SelectAll": 0
+    },
+
+    "pricingField":{
+      "FirstName": 0,
+      "LastName": 1,
+      "Email": 2
+    },
+
+    "headerButton":{
+      "Products": 0,
+      "Pricing": 1
+    },
+
+    "headerMenuitem":{
+      "SMS API": 0,
+      "Messaging API": 0
+    },
+
+    "headerMenuitemHref":{
+      "SMS API": "https://telnyx.com/products/sms-api",
+      "Messaging API": "https://telnyx.com/pricing/messaging"
+    },
+
+    "howItWorksBlock":{
+      "Purchase or port SMS numbers":{
+        "number": 0,
+        "value": "Purchase or port number(s) with SMS capability. If you have an existing number that you wish to port, try our Hosted SMS solution.",
+        "vidSource": "//videos.ctfassets.net/2vm221913gep/sPJguFfrBuuGAa2jpUNsZ/a099e2db282428143406090361691209/How_It_Works_SMSAPI-1_PurchasePort-_2x_.mp4"
+      },
+      "Complete registration":{
+        "number": 1,
+        "value": "Set up a Messaging profile and complete any required registrations (such as 10DLC brand and campaign setup). You can do this via the Portal or our API.",
+        "vidSource": "//videos.ctfassets.net/2vm221913gep/4FQfZd1iapgeHupib8PIoW/1d235292e8d556e6bd56d46ab73ff87e/How_It_Works_SMSAPI-2_CompleteRegistration-_2x_.mp4"
+      }
+    }
+  }
