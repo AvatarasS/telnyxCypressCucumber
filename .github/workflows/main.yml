@@ -23,7 +23,7 @@ jobs:
       - name: Install cucumber
         run: npm install --save-dev @cucumber/cucumber
       - name: Run Cypress test
-        run: npx cypress run --env allure=true,allureReuseAfterSpec=true
+        run: npx cypress run --browser chrome --env allure=true,allureReuseAfterSpec=true
       - name: Reports Generate
         if: ${{ failure() || success() }}
         run: npx allure generate allure-results --clean -o allure-report
