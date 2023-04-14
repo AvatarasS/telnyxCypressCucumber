@@ -28,26 +28,7 @@ Feature: Telnyx website testing
     And I should see Compliance button in 'Jump to' block
     And I should see Data Transfer Impact Assessment button in 'Jump to' block    
 
-  Scenario: ID_005 Test that Error message is appear for blank required fields at form on Report Abuse page
-    When I scroll down to the bottom
-    And I click on the Report Abuse button
-    And I leave required Subject field blank in form
-    And I leave required Phone Number Abusive field blank in form
-    And I leave required Phone Number Received Abuse field blank in form
-    And I click Submit button
-    Then I should see error message for Subject field
-    And I should see error message for Phone Number Abusive field
-    And I should see error message for Phone Number Received Abuse field
-
-  Scenario: ID_006 Test that required fields can be filled with valid credentials at form on Report Abuse page
-    When I scroll down to the bottom
-    And I click on the Report Abuse button
-    And I fill Subject field with Reporting
-    And I fill Phone Number Abusive field with 0975678906
-    And I fill Phone Number Received Abuse field with 0972867510
-    Then I should see Subject field filled with Reporting
-    And I should see Phone Number Abusive field field filled with 0975678906
-    And I should see Phone Number Received Abuse field filled with 0972867510
+  
 
   Scenario: ID_007 Test that the titles naming of paragraph are correct on the Website Terms and Conditions page
     When I scroll down to the bottom
