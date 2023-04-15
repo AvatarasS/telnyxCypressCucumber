@@ -6,17 +6,19 @@ const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esb
 
 module.exports = defineConfig({
     e2e: {  
-  
-    async setupNodeEvents(on, config) {
-      const bundler = createBundler({
-      plugins: [createEsbuildPlugin(config)],
+      async setupNodeEvents(on, config) {
+        allureWriter(on, config);
+        const bundler = createBundler({
+        plugins: [createEsbuildPlugin(config)],
     });
     
     on("file:preprocessor", bundler);
     await addCucumberPreprocessorPlugin(on, config);
     allureWriter(on, config);
     return config;
-
+    },
+    env: {
+      allureReuseAfterSpec: true
     },
     specPattern: "cypress/e2e/*.feature",
     viewportWidth: 1920,
