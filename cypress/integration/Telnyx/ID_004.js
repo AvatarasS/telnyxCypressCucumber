@@ -1,6 +1,6 @@
 const { Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-import DataPrivacyPage from "../../POM/data.privacy.page";
+import DataPrivacyPage from "../POM/data.privacy.page";
 
 let dataPrivacyPage = new DataPrivacyPage
 

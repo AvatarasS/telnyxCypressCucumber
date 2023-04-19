@@ -1,12 +1,12 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-import DataPrivacyPage from "../../POM/data.privacy.page";
-import FooterPage from "../../POM/footer.page";
-import HeaderPage from "../../POM/header.page";
-import MainPage from "../../POM/main.page";
-import MessagingPricingPage from "../../POM/messaging.page";
-import ReleaseNotesPage from "../../POM/release.notes.page";
-import SmsApiPage from "../../POM/sms.api.page";
+import DataPrivacyPage from "../POM/data.privacy.page";
+import FooterPage from "../POM/footer.page";
+import HeaderPage from "../POM/header.page";
+import MainPage from "../POM/main.page";
+import MessagingPricingPage from "../POM/messaging.page";
+import ReleaseNotesPage from "../POM/release.notes.page";
+import SmsApiPage from "../POM/sms.api.page";
 
 let mainPage = new MainPage
 let footerPage = new FooterPage

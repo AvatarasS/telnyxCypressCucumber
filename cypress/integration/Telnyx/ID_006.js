@@ -1,7 +1,7 @@
 const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-import CareersPage from "../../POM/careers.page";
-import FooterPage from "../../POM/footer.page";
+import CareersPage from "../POM/careers.page";
+import FooterPage from "../POM/footer.page";
 
 let footerPage = new FooterPage
 let careersPage = new CareersPage

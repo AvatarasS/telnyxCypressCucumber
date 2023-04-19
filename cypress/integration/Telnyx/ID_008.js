@@ -1,6 +1,6 @@
 const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-import ReleaseNotesPage from "../../POM/release.notes.page";
+import ReleaseNotesPage from "../POM/release.notes.page";
 
 let releaseNotesPage = new ReleaseNotesPage
 
