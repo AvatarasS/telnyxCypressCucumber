@@ -6,15 +6,11 @@ import HeaderPage from "../POM/header.page";
 import MainPage from "../POM/main.page";
 import MessagingPricingPage from "../POM/messaging.page";
 import ReleaseNotesPage from "../POM/release.notes.page";
-import ReportAbusePage from "../POM/report.abuse.page";
 import SmsApiPage from "../POM/sms.api.page";
-import TermsConditionsPage from "../POM/terms.conditions.page";
 
 let mainPage = new MainPage
 let footerPage = new FooterPage
 let dataPrivacyPage = new DataPrivacyPage
-let reportAbusePage = new ReportAbusePage
-let termsConditionsPage = new TermsConditionsPage
 let releaseNotesPage = new ReleaseNotesPage
 let headerPage = new HeaderPage
 let messagingPricingPage = new MessagingPricingPage
