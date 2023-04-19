@@ -1,10 +1,10 @@
 # Automated Testing for telnyx.com using Cypress with Cucumber and JavaScript
 
-This project is an automated testing suite for the website [Telnyx](https://telnyx.com/), written in Cypress and Cucumber using JavaScript. These tests cover various features of the Telnyx website, including video playback, logo display, button functionality and href attributes, form validation, title naming, search functionality, and checkbox filtering in different sections of the website.
+This project is an automated testing suite for the website [Telnyx](https://telnyx.com/), written in Cypress and Cucumber using JavaScript. The report made via Allure reporter. These tests cover various features of the Telnyx website, including video playback, logo display, button functionality and href attributes, form validation, title naming, search functionality, and checkbox filtering in different sections of the website.
 
 ### Project Setup
 
-To setup the automated tests in this project, follow these steps:
+To set up the automated tests in this project, follow these steps:
 1. Clone this repository to your local machine.
     - Open the terminal or command prompt on your machine.
     - Navigate to the directory where you want to download the repository.
@@ -24,7 +24,7 @@ To setup the automated tests in this project, follow these steps:
 ### Reports
 
 - Run ```npm run allure:clear``` to clear previous Allure results
-- Run ```npm run allure:report``` to generate test Allure report
+- Run ```npm run allure:report``` to generate a test Allure report
 - Run ```npm run allure:open``` to open generated Allure report
 
 ### Notes
