@@ -5,11 +5,12 @@
       "dataPrivacy": "https://telnyx.com/company/data-privacy",
       "reportAbuse": "https://telnyx.com/report-abuse",
       "websiteTerms": "https://telnyx.com/terms-and-conditions",
-      "releaseNotes": "https://telnyx.com/release-notes"
+      "releaseNotes": "https://telnyx.com/release-notes",
+      "careers": "https://telnyx.com/careers"
     },
 
     "errorMessage":{
-      "reportAbuseRequiredField": "This field is required."
+      "lawEnforcementForm": "There was a problem with your submission."
     },
 
     "subjectFieldNumber": 0,
@@ -42,6 +43,10 @@
     "headerMenuitem":{
       "SMS API": 0,
       "Messaging API": 0
+    },
+
+    "dataPrivacyPage":{
+      "innerTextDoesTelnyxButton": "Telnyx processes personal data to provide our products and services and for other purposes as outlined in the applicable Privacy Policy for the products you are using or accessing."
     },
 
     "headerMenuitemHref":{

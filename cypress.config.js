@@ -20,10 +20,10 @@ module.exports = defineConfig({
     env: {
       allureReuseAfterSpec: true
     },
-    specPattern: "cypress/e2e/*.feature",
+    specPattern: "cypress/integration/*.feature",
     viewportWidth: 1920,
     viewportHeight: 1080,
-    chromeWebSecurity: false
-
+    chromeWebSecurity: false,
+    videoCompression: false
     }
 })

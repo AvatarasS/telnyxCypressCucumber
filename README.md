@@ -18,11 +18,17 @@ To setup the automated tests in this project, follow these steps:
 
 ### Running Tests
 
-- Run ```npm run gui``` to open Cypress GUI.
-- Run ```npm run headlessChrome``` to start the test runner in headless mode and run all tests in the Chrome browser without opening the GUI.
-- Run ```npm run headedNoExit``` will force the browser to be shown in order to view the command log or have access to developer tools after a spec has run.
+- Run ```npm run cy:open``` to open Cypress GUI.
+- Run ```npm run cy:run``` to start the test runner in headless mode and run all tests in the Chrome browser without opening the GUI.
+
+### Reports
+
+- Run ```npm run allure:clear``` to clear previous Allure results
+- Run ```npm run allure:report``` to generate test Allure report
+- Run ```npm run allure:open``` to open generated Allure report
 
 ### Notes
 
+- Link to the GitHub Pages with test report generated via Allure reporter: (https://avatarass.github.io/telnyxCypressCucumber/).
 - The test cases can be found in the `cypress/e2e` directory.
 - The page object models can be found in the `cypress/e2e/POM` directory.
