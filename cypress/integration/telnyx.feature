@@ -26,7 +26,7 @@ Feature: Telnyx website testing
   Scenario: ID_004 Test that 4 'scroll-to' buttons are displayed over the 'Telnyx Product Updates' block on the Data and Privacy page
     When I scroll down to the footer
     And I click on the Data and Privacy button
-    Then I should see 4 scroll-to buttons over 'Telnyx Product Updates' block
+    Then I should see 4 scroll-to buttons over the 'Telnyx Product Updates' block
     And I should see the Telnyx Product Updates button in the scroll-to buttons block
     And I should see the GDPR Frequently Asked Questions button in the scroll-to buttons block
     And I should see the Compliance button in the scroll-to buttons block
