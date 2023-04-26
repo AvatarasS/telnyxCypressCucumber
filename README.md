@@ -30,5 +30,6 @@ To set up the automated tests in this project, follow these steps:
 ### Notes
 
 - Link to the GitHub Pages with test report generated via Allure reporter: (https://avatarass.github.io/telnyxCypressCucumber/).
-- The test cases can be found in the `cypress/e2e` directory.
-- The page object models can be found in the `cypress/e2e/POM` directory.
+- The test cases can be found in the `cypress/integration` directory.
+- The page object models can be found in the `cypress/integration/POM` directory.
+- The Step Definitions can be found in the `cypress/integration/Telnyx` directory.

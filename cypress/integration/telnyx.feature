@@ -13,23 +13,24 @@ Feature: Telnyx website testing
 
   Scenario: ID_003 Test that buttons at bottom of the Main page have the correct href attribute         
     When I scroll down to the footer
-    Then I should see 'Data and Privacy' that has the correct href 'https://telnyx.com/company/data-privacy'
-    And I should see 'Report Abuse' that has the correct href 'https://telnyx.com/report-abuse'
-    And I should see 'Privacy Policy' that has the correct href 'https://telnyx.com/privacy-policy'
-    And I should see 'Cookie Policy' that has the correct href 'https://telnyx.com/cookie-policy'
-    And I should see 'Law Enforcement' that has the correct href 'https://telnyx.com/law-enforcement-request'
-    And I should see 'Acceptable Use' that has the correct href 'https://telnyx.com/acceptable-use-policy'
-    And I should see 'Website Terms and Conditions' that has the correct href 'https://telnyx.com/terms-and-conditions'
-    And I should see 'Release Notes' that has the correct href 'https://telnyx.com/release-notes'
+    Then I should see 'Data and Privacy' that has the correct href '/data-privacy'
+    And I should see 'Report Abuse' that has the correct href '/report-abuse'
+    And I should see 'Privacy Policy' that has the correct href '/privacy-policy'
+    And I should see 'Cookie Policy' that has the correct href '/cookie-policy'
+    And I should see 'Law Enforcement' that has the correct href '/law-enforcement-request'
+    And I should see 'Acceptable Use' that has the correct href '/acceptable-use-policy'
+    And I should see 'Website Terms and Conditions' that has the correct href '/terms-and-conditions'
+    And I should see 'Release Notes' that has the correct href '/release-notes'
     And I should see 'Careers' that has the correct href '/careers'
 
-  Scenario: ID_004 Test that buttons are displayed at 'Jump to' block on Data and Privacy page
+  Scenario: ID_004 Test that 4 'scroll-to' buttons are displayed over the 'Telnyx Product Updates' block on the Data and Privacy page
     When I scroll down to the footer
     And I click on the Data and Privacy button
-    Then I should see the Telnyx Product Updates button in the 'Jump to' block
-    And I should see the GDPR Frequently Asked Questions button in the 'Jump to' block
-    And I should see the Compliance button in the 'Jump to' block
-    And I should see the Data Transfer Impact Assessment button in the 'Jump to' block    
+    Then I should see 4 scroll-to buttons over 'Telnyx Product Updates' block
+    And I should see the Telnyx Product Updates button in the scroll-to buttons block
+    And I should see the GDPR Frequently Asked Questions button in the scroll-to buttons block
+    And I should see the Compliance button in the scroll-to buttons block
+    And I should see the Data Transfer Impact Assessment button in the scroll-to buttons block    
 
   Scenario: ID_005 Test that the user see the inner text of the dropdown button after clicking on it at GDPR Frequently Asked Questions block on Data and Privacy page
     When I scroll down to the footer

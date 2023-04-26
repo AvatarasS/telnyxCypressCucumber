@@ -1,7 +1,7 @@
 class TermsConditionsPage {
     
     get titles(){
-        return cy.get('[class*="sc-d8f5e61f-2"]')
+        return cy.get('[class="c-PJLV c-fKwEGa c-PJLV-Ysdyi-blog-true"]')
     }
 
     checkTitles(number, title){
