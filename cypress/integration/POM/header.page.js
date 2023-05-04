@@ -5,7 +5,7 @@ class HeaderPage{
     }
 
     get headerButtons(){
-        return cy.get('[class="c-icEDhJ"]')
+        return cy.get('[class*="c-edMhbw"]')
     }
 
     clickHeaderButton(button){
