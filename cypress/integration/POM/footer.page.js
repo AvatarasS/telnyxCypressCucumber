@@ -21,21 +21,21 @@ class FooterPage {
     }
 
     clickWebsiteTermsButton(){
-        this.footerButtons.eq(1).find('a').eq(0).click()
+        this.footerButtons.eq(1).find('a').eq(2).click()
         cy.fixture('testData.json').then((testData) => {
             cy.url().should('eq', testData.pageUrl.websiteTerms)
         })
     }
 
     clickReleaseNotesButton(){
-        this.footerButtons.eq(1).find('a').eq(1).click()
+        this.footerButtons.eq(1).find('a').eq(0).click()
         cy.fixture('testData.json').then((testData) => {
             cy.url().should('eq', testData.pageUrl.releaseNotes)
         })
     }
     
     clickCareersButton(){
-        this.footerButtons.eq(1).find('a').eq(2).click()
+        this.footerButtons.eq(1).find('a').eq(1).click()
         cy.fixture('testData.json').then((testData) => {
             cy.url().should('eq', testData.pageUrl.careers)
         })
